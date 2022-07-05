@@ -1,0 +1,47 @@
+.skills{
+    @extend %section;
+
+&__list {
+
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+&__item {
+ display: flex;
+ flex-direction: column;
+ gap:10px;
+ width:270px;
+}}
+
+
+.skill__container-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 270px;
+  width:100%;
+  min-height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.skill__icon {
+  width: 70px;
+  height: 70px;
+}
+.skill__title {
+  list-style: none;
+  color: black;
+  font-size: 14px;
+  line-height: 1.1;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.skill__txt {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--brand-color);
+  display: flex;
+}

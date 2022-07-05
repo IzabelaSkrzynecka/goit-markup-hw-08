@@ -1,0 +1,25 @@
+
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex-wrap:nowrap;
+  gap:30px;}
+.contacts__link {
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--brand-color);
+  display: flex;
+  align-items: center;
+   gap:10px;
+  transition: color var(--animation);}
+.contacts__link:hover {
+  color: var(--beside-color);
+}
+.contacts__icon {
+  fill: currentColor;
+  transition: fill var(--animation);}
+.contacts__icon:hover,
+.contacts__icon:focus {
+  color: var(--beside-color);
+}

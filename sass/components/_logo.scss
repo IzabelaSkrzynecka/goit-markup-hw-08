@@ -1,0 +1,36 @@
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 93px;
+  flex-direction: row;
+  text-decoration: none;
+  font-family: 'Raleway';
+font-style: normal;
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+letter-spacing: 0.03em;}
+
+  .logo__header {
+  background-color: #ffffff;
+  transition: color var(--animation);
+  font-style: 700;
+  text-align: center;
+  vertical-align: top;
+  color: black;
+  list-style-type: none;
+&:hover {
+  color: var(--beside-color);
+}}
+.logo__web {
+  color: var(--beside-color);
+}
+.logo__web--white {
+  color: #ffffff;
+}
+.logo__foter{
+   background-color: #2f303a;
+&:hover {
+  color: var(--beside-color);
+}}
+

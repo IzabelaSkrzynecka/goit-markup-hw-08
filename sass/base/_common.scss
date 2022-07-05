@@ -1,0 +1,48 @@
+
+/*moje*/
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: var(--brand-color);
+  background-color: #ffffff;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+  a {
+    color:inherit;
+    text-decoration: none;
+  }
+
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

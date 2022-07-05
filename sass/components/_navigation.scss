@@ -1,0 +1,32 @@
+.navigation {
+  margin-right: 46px;
+}
+.navigation__list {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+}
+.navigation__link {
+  display: flex;
+  align-items: center;
+  color: #212121;
+  font-weight: 500;
+  &__link:hover {
+    color: var(--beside-color);
+  }
+}
+
+.navigation__link--active {
+  color: var(--beside-color);
+  position: relative;
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: -32px;
+  //   display: block;
+  //   width: 100%;
+  //   border-top: 4px solid var(--beside-color);
+  //   border-radius: 2px;
+  // }
+}

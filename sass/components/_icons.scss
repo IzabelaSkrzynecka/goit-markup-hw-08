@@ -1,0 +1,31 @@
+.icon__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  list-style: none;
+}
+
+.icon__item  {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+  background-color: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  transition: color var(--animation);
+&:hover,
+&:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}}
+
+.icon__image {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  display: flex;
+}
