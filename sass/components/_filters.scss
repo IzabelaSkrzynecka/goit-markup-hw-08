@@ -2,9 +2,14 @@
     @extend %section;
      padding-bottom: 0px;}
 .filters__set{
-display: flex;
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 8px;
+    @media screen and (min-width:768px){
+
   justify-content: center;
-  gap: 8px;
+  }
 }
 .filters__button {
     @extend %button;

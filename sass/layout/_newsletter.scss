@@ -1,7 +1,3 @@
-.newsletter {
-  margin-left: auto;
-}
-
 .newsletter__title {
   display: block;
   margin-bottom: 20px;
@@ -11,12 +7,24 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white_color);
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  
+  text-align: center;
+
+  @media screen and (min-width:1000px){
+      text-align: start;
+  }
 }
 
 .newsletter__form {
   display: flex;
+  flex-direction: column;
+  gap:20px;
+  justify-content: center;
+  align-items: center;
+
+    @media screen and (min-width:1000px){
+      flex-direction: row;
+      justify-content: space-between;
+  }
 }
 
 .newsletter__input {
@@ -36,12 +44,14 @@
   text-align: center;
   letter-spacing: 0.06em;
   padding: 10px 28px;
-  margin-left: 12px;
+  // margin-left: 12px;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   cursor: pointer;
+  width: 200px;
+  height:50px;
 }
 
 .newsletter__icon {

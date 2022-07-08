@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,12 +17,30 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class=" contaner container--header">
+      <div class="container container--header">
+      
           <a class="logo logo__header" href="index.html">
             <span class="logo__web">Web</span>Studio</a
           >
-          <nav class="navigation">
+          
+          
+          <button class="menu-toggle js-open-menu"
+           aria-expanded="false"
+           aria-controls="mobile-menu"
+           type="button">
+            <svg class="js-open-menu__icon"    >
+                  <use href="./images/icons.svg#burger-menu"></use>
+            </svg>
+            </button>
+
+       
+
+     <div class="menu-container js-menu-container" id="mobile-menu">
+    <button   class="menu-toggle js-close-menu" class="js-close-menu" type="button"> <svg class="js-open-menu__icon"    >
+                  <use href="./images/icons.svg#close-button"></use>
+            </svg></button>
+         
+    <nav class="navigation">            
             <ul class="navigation__list">
               <li>
                 <a
@@ -37,6 +55,7 @@
               <li><a class="navigation__link" href="#">Kontakt</a></li>
             </ul>
           </nav>
+
           <ul class="contacts">
             <li>
               <a class="contacts__link" href="mailto:info@devstudio.com">
@@ -47,7 +66,7 @@
               </a>
             </li>
             <li>
-              <a class="contacts__link" href="tel:+48 111 111 111">
+              <a class="contacts__link contacts__link--phone" href="tel:+48 111 111 111">
                 <svg class="contacts__icon" width="10px" height="16px">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
@@ -55,11 +74,27 @@
               </a>
             </li>
           </ul>
-        </div>
-      </div>
+          <ul class="social-media">
+            <li class="social-media__item">
+              <a href="" >
+                  Instagram
+              </a>
+            </li>
+            <li class="social-media__item"> <a href="" >
+                 Twitter 
+              </a></li>
+            <li class="social-media__item"> <a href="" >
+                 Facebook 
+              </a></li>
+            <li class="social-media__item"> <a href="" >
+                  LinkedIn
+              </a></li>
+          </ul>
+     </div> 
+     
     </header>
 
-    <!-- <main>
+    <main>
       <section class="banner">
         <div class="container">
           <div class="banner__text-container">
@@ -72,6 +107,7 @@
           </div>
         </div>
       </section>
+
       <section class="skills">
         <div class="container">
           <ul class="skills__list">
@@ -135,55 +171,268 @@
           </ul>
         </div>
       </section>
+      
       <section class="solutions ">
         <div class="container">
           <h2 class="solutions__title">Czym się zajmujemy</h2>
           <ul class="solutions__list">
             <li class="solutions__item solution">
-              <img
+              <!-- <img
                 
                 src="images/programmer-working.jpg"
                 alt="programmer-working"
                 width="370"
                 height="294"
-              />
+              /> -->
+                <picture>
+                <source
+                  srcset="
+                    ./images/work/work@1x.webp 1x,
+                    ./images/work/work@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/work/work@1x.jpg 1x,
+                    ./images/work/work@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/work/work@1x.webp 1x,
+                    ./images/work/work@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/work/work@1x.jpg 1x,
+                    ./images/work/work@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/work/work@1x.webp 1x,
+                    ./images/work/work@2x.webp 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/work/work@1x.jpg 1x,
+                    ./images/work/work@2x.jpg 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/work/work@1x.jpg" alt="programmer-working" />
+              </picture>
+
               <p class="solution__desc">Aplikacje komputerowe</p>
             </li>
             <li class="solutions__item solution">
-              <img
+              <!-- <img
                 
                 src="images/web-ui-designer.jpg"
                 alt="web-ui-designer"
                 width="370"
                 height="294"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/work2@1x.webp 1x,
+                    ./images/work/work2@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/work/work2@1x.jpg 1x,
+                    ./images/work/work2@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/work/work2@1x.webp 1x,
+                    ./images/work/work2@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/work/work2@1x.jpg 1x,
+                    ./images/work/work2@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/work/work2@1x.webp 1x,
+                    ./images/work/work2@2x.webp 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/work/work2@1x.jpg 1x,
+                    ./images/work/work2@2x.jpg 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/work/work2@1x.jpg" alt="web-ui-designer" />
+              </picture>
               <p class="solution__desc">Aplikacje mobilne</p>
             </li>
             <li class="solutions__item solution">
-              <img
+              <!-- <img
                 
                 src="images/creative-artist-design.jpg"
                 alt="creative-artist-design"
                 width="370"
                 height="294"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/work3@1x.webp 1x,
+                    ./images/work/work3@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/work/work3@1x.jpg 1x,
+                    ./images/work/work3@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/work/work3@1x.webp 1x,
+                    ./images/work/work3@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/work/work3@1x.jpg 1x,
+                    ./images/work/work3@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/work/work3@1x.webp 1x,
+                    ./images/work/work3@2x.webp 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/work/work3@1x.jpg 1x,
+                    ./images/work/work3@2x.jpg 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/work/work3@1x.jpg" alt="creative-artist-design" />
+              </picture>
               <p class="solution__desc">Rozwiązania graficzne</p>
             </li>
           </ul>
         </div>
       </section>
+
+      
       <section class="members">
         <div class="container">
           <h2 class="members__title">Nasz zespół</h2>
           <ul class="members__list">
             <li class="members__item member">
-              <img
+              <!-- <img
     
                 src="images/man-in-brown-shirt.jpg"
                 alt="man-in-brown-shirt"
                 width="270"
                 height="260"
               />
+ -->
+
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop1@1x.webp 1x,
+                    ./images/team/desktop1@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop1@1x.jpg 1x,
+                    ./images/team/desktop1@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet1@1x.webp 1x,
+                    ./images/team/tablet1@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet1@1x.jpg 1x,
+                    ./images/team/tablet1@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile1@1x.webp 1x,
+                    ./images/team/mobile1@2x.webp 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile1@1x.jpg 1x,
+                    ./images/team/mobile1@2x.jpg 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/mobile2@1x.jpg" alt="man-in-glasses" />
+              </picture>
+
+
+
               <h3 class="member__title">John Doe</h3>
               <p class="member__desc">Product Designer</p>
               <ul class="icon icon__list">
@@ -217,14 +466,67 @@
                 </li>
               </ul>
             </li>
+
             <li class="members__item member">
-              <img
+              <!-- <img
                 class="img-index"
                 src="images/woman-in-glasses.jpg"
                 alt="woman-in-glasses"
                 width="270"
                 height="260"
-              />
+              /> -->
+
+               <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop2@1x.webp 1x,
+                    ./images/team/desktop2@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop2@1x.jpg 1x,
+                    ./images/team/desktop2@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet2@1x.webp 1x,
+                    ./images/team/tablet2@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet2@1x.jpg 1x,
+                    ./images/team/tablet2@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile2@1x.webp 1x,
+                    ./images/team/mobile2@2x.webp 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile2@1x.jpg 1x,
+                    ./images/team/mobile2@2x.jpg 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/mobile2@1x.jpg" alt="woman-in-glasses" />
+              </picture>
 
               <h3 class="member__title">John Doe</h3>
               <p class="member__desc">Frontent Developer</p>
@@ -251,7 +553,7 @@
                   </a>
                 </li>
                 <li class="icon__item">
-                  <a class ="icon__link" href="#">
+                  <a class ="icon__link" href="#"> 
                     <svg class="icon__image">
                       <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
@@ -261,13 +563,65 @@
             </li>
             
             <li class="members__item member">
-              <img
+              <!-- <img
               
                 src="images/man-in-blue-shirt.jpg"
                 alt="man-in-blue-shirt"
                 width="270"
                 height="260"
-              />
+              /> -->
+                <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop3@1x.webp 1x,
+                    ./images/team/desktop3@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop3@1x.jpg 1x,
+                    ./images/team/desktop3@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet3@1x.webp 1x,
+                    ./images/team/tablet3@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet3@1x.jpg 1x,
+                    ./images/team/tablet3@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile3@1x.webp 1x,
+                    ./images/team/mobile3@2x.webp 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile3@1x.jpg 1x,
+                    ./images/team/mobile3@2x.jpg 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/mobile3@1x.jpg" alt="man-in-blue-shirt" />
+              </picture>
+
               <h3 class="member__title">John Doe</h3>
               <p class="member__desc">Marketing</p>
              <ul class="icon icon__list">
@@ -303,13 +657,65 @@
             </li>
 
             <li class="members__item member">
-              <img
+              <!-- <img
                 
                 src="images/man-in-black-t-shirt.jpg"
                 alt="man-in-black-t-shirt"
                 width="270"
                 height="260"
-              />
+              /> -->
+                <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop4@1x.webp 1x,
+                    ./images/team/desktop4@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop4@1x.jpg 1x,
+                    ./images/team/desktop4@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet4@1x.webp 1x,
+                    ./images/team/tablet4@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet4@1x.jpg 1x,
+                    ./images/team/tablet4@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile4@1x.webp 1x,
+                    ./images/team/mobile4@2x.webp 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile4@1x.jpg 1x,
+                    ./images/team/mobile4@2x.jpg 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/mobile2@1x.jpg" alt="man-in-black-t-shirt" />
+              </picture>
+
               <h3 class="member__title">John Doe</h3>
               <p class="member__desc">Ul Designer</p>
               <ul class="icon icon__list">
@@ -346,6 +752,8 @@
           </ul>
         </div>
       </section>
+
+
       <section class="customers">
         <div class="container">
           <h2 class="customers__title">Nasi klienci</h2>
@@ -396,10 +804,12 @@
         </div>
       </section>
     </main>
+
+
     <footer class="footer">
       <div class="container footer__direction">
-        <div >
-        
+
+        <div class="footer__info">        
             <a class="logo logo__footer" href="index.html">
             <span class="logo__web">Web</span><span class="logo__web logo__web--white">Studio</span></a
           >
@@ -420,6 +830,8 @@
             </li>
           </ul>
         </div>
+
+
         <div class="sidebar">
           <strong class="sidebar__title">Dołącz do nas</strong>
           <ul class="icon icon__list">
@@ -454,7 +866,9 @@
               </ul>
             </li>
           </ul>
-        </div>    <div class="newsletter">
+        </div>    
+        
+        <div class="newsletter">
           <strong class="newsletter__title">Zapisz się do newslettera</strong>
           <form class="newsletter__form">
             <label for="newsletter_contact">
@@ -474,7 +888,7 @@
           </form>
         </div>  
        </div>
-      </footer> -->
+      </footer> 
     
    
     <div class="backdrop is-hidden" data-modal>
@@ -513,8 +927,10 @@
               <use href="./images/icons.svg#icon-icon-person1" width="18"></use>
             </svg>
           </label>
+
           <label for="form-comment"
-            ><p class="form__txt" >Komentarz</p>
+            >
+            <p class="form__txt" >Komentarz</p>
             <textarea
               name="comment"
               id="form-comment"
@@ -542,6 +958,7 @@
         <button type="button" class="modal__btn-close" data-modal-close>X</button>
       </div>
     </div>
+    <script src="./js/burger-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

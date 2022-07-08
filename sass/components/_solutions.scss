@@ -1,4 +1,13 @@
 .solutions{
+  @media screen and (max-width:1199px){
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(1px 1px 1px 1px);
+  }
     @extend %section;
    padding-top:0px;
 }

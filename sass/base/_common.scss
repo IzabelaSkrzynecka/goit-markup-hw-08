@@ -1,11 +1,18 @@
 
 /*moje*/
+
+// *{
+//   outline: 1px solid tomato;
+// }
+
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--brand-color);
   background-color: #ffffff;
   scroll-behavior: smooth;
-  min-height: 100vh;
+  min-height: 100vh; 
+  
+
 }
 h1,
 h2,
