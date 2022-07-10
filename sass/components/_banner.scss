@@ -46,7 +46,7 @@
     rgba(47, 48, 58, 0.4)
   ),
   url("../images/banner-desktop-@1x.jpg");
-
+max-width: 1600px;
 min-height: 600px;
 padding: 200px 0;
 @media (min-device-pixel-ratio: 2),
@@ -62,9 +62,7 @@ padding: 200px 0;
 }
 }
 
-
 }
-
 
 .banner__text-container {
   max-width:360px;

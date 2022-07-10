@@ -154,8 +154,7 @@ select {
 .js-close-menu {
   background-color: transparent;
   position: absolute;
-  top: 10px;
-  right: 15px;
+  align-items: center;
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -430,6 +429,7 @@ select {
 @media screen and (min-width: 769px) {
   .banner {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/banner-desktop-@1x.jpg");
+    max-width: 1600px;
     min-height: 600px;
     padding: 200px 0;
   }
@@ -469,7 +469,12 @@ select {
 }
 
 .skills {
-  padding-bottom: 0;
+  padding-bottom: 94px;
+}
+@media screen and (min-width: 768px) {
+  .skills {
+    padding-bottom: 45px;
+  }
 }
 .skills__list {
   display: flex;
@@ -600,32 +605,31 @@ select {
   margin-bottom: 50px;
 }
 .members__list {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   gap: 30px;
+  margin: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.members__list > .members__item {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 100%;
+  flex: 0 0 calc(100% - 30px);
+  max-width: calc(100% - 30px);
+  margin: 15px;
 }
 @media screen and (min-width: 768px) {
-  .members__list {
-    max-width: 738px;
-    flex-direction: row;
-    flex-wrap: wrap;
+  .members__list > .members__item {
+    flex: 0 0 calc(50% - 30px);
+    max-width: calc(50% - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
-  .members__list {
-    max-width: 1170px;
-    flex-wrap: nowrap;
+  .members__list > .members__item {
+    flex: 0 0 calc(25% - 30px);
+    max-width: calc(25% - 30px);
   }
-}
-.members__item {
-  background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  width: 270px;
-  border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
 }
 
 .member__title {
@@ -1076,6 +1080,11 @@ select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__info {
+    margin-right: 76px;
+  }
 }
 @media screen and (min-width: 1000px) {
   .footer__info {
