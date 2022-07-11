@@ -12,7 +12,9 @@ padding-bottom: 94px;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 30px;
+  width:100%;
+  margin:-15px;
+  // gap: 30px;
   @media screen and (min-width:768px) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -28,18 +30,23 @@ padding-bottom: 94px;
  display: flex;
  flex-direction: column;
  align-items: center;
- gap:10px;
+//  gap:10px;
  width:100%;
  max-width:450px;
+margin: 15px;
+  flex: 0 0 calc(100% - 30px);
+ max-width: calc(100% - 30px);
 
   
 @media screen and (min-width:768px) {
- max-width: 354px;
- 
+//  max-width: 354px;
+  flex: 0 0 calc(50% - 30px);
+ max-width: calc(50% - 30px);
 }
 @media screen and (min-width:1200px) {
-  max-width:270px;
-  
+  // max-width:270px;
+   flex: 0 0 calc(25% - 30px);
+ max-width: calc(25% - 30px);
 }}}
 
 
