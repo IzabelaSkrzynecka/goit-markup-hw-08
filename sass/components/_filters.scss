@@ -14,13 +14,14 @@ gap: 8px;
 .filters__button {
     @extend %button;
     padding: 6px 22px; 
-     transition: all var(--animation);}
- .filters__button--active  { 
- color: white;
-  background-color: var(--beside-color);
- }
+     transition: all var(--animation);
+     color:black;
+  background-color: #F5F4FA;}
+ 
 .filters__button:hover,
 .filters__button:focus{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: white;
+  background-color: var(--beside-color);
 }

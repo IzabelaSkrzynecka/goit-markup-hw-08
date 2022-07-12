@@ -7,8 +7,7 @@
   width:100%;
 }
 .footer__direction {
-  display: block;
-  // align-items: center;
+
   // justify-content: center;
   // flex-direction: column;
   // gap:60px;
@@ -18,12 +17,14 @@
 @media screen and (min-width:768px) {
   // flex-direction: row;
   // flex-wrap: wrap;
-  // align-items: flex-start;
- 
-   flex-wrap: wrap;
-    padding-left: 76px;
-    padding-right: 89px;
-    justify-content: space-between;
+  align-items: flex-start;
+   display: flex;
+flex-wrap: wrap;
+  align-items: center;
+  //  flex-wrap: wrap;
+  //   padding-left: 76px;
+  //   padding-right: 89px;
+    justify-content: space-around;
     align-items: baseline;
 }
 @media screen and (min-width:1200px) {
@@ -58,12 +59,12 @@ align-items: flex-start;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
   margin-top: 30px;
   gap: 9px;
 
   
-  @media screen and (min-width:1000px) {
+  @media screen and (max-width:1200px) {
     margin-top: 20px;
 align-items: flex-start;
   justify-content: flex-start;
@@ -88,7 +89,8 @@ letter-spacing: 0.03em;
   color: var(--beside-color);
 }}
 .sidebar {
-  margin-right:78px;
+  
+  
   // margin-left: 70px;
  display: flex;
  flex-direction: column;
@@ -96,7 +98,8 @@ letter-spacing: 0.03em;
  justify-content: center;
 
 
-   @media screen and (min-width:1000px) {
+   @media screen and (max-width:1200px) {
+    margin-right:78px;
    align-items: center;
 // align-items: flex-start;
 //   justify-content: flex-start;
