@@ -13,7 +13,7 @@ overflow: scroll;
 
 .modal {
 width: 100%;
-
+position: absolute;
  max-width: 450px;
  min-height: 609px;
  
@@ -30,11 +30,11 @@ width: 100%;
 &:hover {
   background-color: #fff;
 }
-@media screen and (min-width:768px) {
-  position: absolute;
+// @media screen and (min-width:768px) {
+//   position: absolute;
 
 
-}
+// }
 @media screen and (min-width:1200px) {
 
   max-width: 528px;
@@ -147,13 +147,20 @@ color: rgba(117, 117, 117, 0.5);
 
 .form__checkbox-box {
   display: flex;
-  width: 100%;
+  // width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
 }
-
+.form__checkbox-txt{
+   line-height: 1.16;
+  letter-spacing: 0.03em;
+  font-size: 12px;
+   @media screen and (min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.71;}
+}
 .form__checkbox-txt::before {
   display: inline-block;
   content: "";
@@ -169,6 +176,7 @@ color: rgba(117, 117, 117, 0.5);
 
 .form__checkbox-txt--blue {
   color: var(--beside-color);
+  text-decoration: underline;
 }
 
 .form__checkbox-input:checked + .form__checkbox-txt::before {

@@ -41,8 +41,9 @@
     max-width: calc(50% - 30px)
   }
    @media screen and (min-width:1200px) {
-    // width: 170px;
-  max-width: calc(25% - 30px) }
+  max-width: 170px;
+  position: row;}
+  // max-width: calc(25% - 30px) }
 }
 
 
@@ -53,4 +54,3 @@
   height: 52px;
   
 }
-

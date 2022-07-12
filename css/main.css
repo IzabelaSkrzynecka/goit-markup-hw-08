@@ -130,9 +130,8 @@ select {
     width: 100%;
     height: 100%;
     position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 50;
+    top: 11px;
+    right: 10px;
     background-color: #fff;
     padding: 48px 40px;
   }
@@ -154,6 +153,8 @@ select {
 .js-close-menu {
   background-color: transparent;
   position: absolute;
+  top: 11px;
+  right: 10px;
   align-items: center;
   width: 40px;
   height: 40px;
@@ -482,7 +483,6 @@ select {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  width: 100%;
   margin: -15px;
 }
 @media screen and (min-width: 768px) {
@@ -730,7 +730,8 @@ select {
 }
 @media screen and (min-width: 1200px) {
   .customers__item {
-    max-width: calc(25% - 30px);
+    max-width: 170px;
+    position: row;
   }
 }
 
@@ -755,6 +756,7 @@ select {
 
 .modal {
   width: 100%;
+  position: absolute;
   max-width: 450px;
   min-height: 609px;
   position: relative;
@@ -768,11 +770,6 @@ select {
 }
 .modal:hover {
   background-color: #fff;
-}
-@media screen and (min-width: 768px) {
-  .modal {
-    position: absolute;
-  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -876,11 +873,22 @@ select {
 
 .form__checkbox-box {
   display: flex;
-  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+}
+
+.form__checkbox-txt {
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  font-size: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .form__checkbox-txt {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form__checkbox-txt::before {
@@ -897,6 +905,7 @@ select {
 
 .form__checkbox-txt--blue {
   color: var(--beside-color);
+  text-decoration: underline;
 }
 
 .form__checkbox-input:checked + .form__checkbox-txt::before {
@@ -1009,10 +1018,7 @@ select {
 
 .card {
   width: 100%;
-  display: flex;
   flex-wrap: wrap;
-  min-height: 404px;
-  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .card {
@@ -1080,20 +1086,20 @@ select {
 
 .footer__direction {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__direction {
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
+    padding-left: 76px;
+    padding-right: 89px;
+    justify-content: space-between;
+    align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__direction {
+    padding-left: 15px;
+    padding-right: 15px;
     flex-wrap: nowrap;
   }
 }
@@ -1103,16 +1109,13 @@ select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
-  .footer__info {
-    margin-right: 76px;
-  }
-}
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   .footer__info {
     align-items: flex-start;
-    justify-content: flex-start;
+    margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -1172,6 +1175,15 @@ select {
   text-align: center;
 }
 
+.newsletter {
+  margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .newsletter {
+    margin: 0;
+  }
+}
+
 .newsletter__title {
   display: block;
   margin-bottom: 20px;
@@ -1182,29 +1194,29 @@ select {
   text-transform: uppercase;
   color: var(--white_color);
   text-align: center;
+  margin-bottom: 20px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   .newsletter__title {
-    text-align: start;
+    text-align: left;
   }
 }
 
 .newsletter__form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   .newsletter__form {
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex;
   }
 }
 
 .newsletter__input {
-  width: 358px;
+  display: block;
+  width: 100%;
   padding: 15px 0 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -1212,10 +1224,25 @@ select {
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0);
   color: #fff;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .newsletter__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .newsletter__input {
+    width: 358px;
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 12px;
+  }
 }
 
 .newsletter__btn {
-  display: flex;
+  display: inline-flex;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -1225,8 +1252,6 @@ select {
   font-size: 16px;
   line-height: 1.88;
   cursor: pointer;
-  width: 200px;
-  height: 50px;
 }
 
 .newsletter__icon {
