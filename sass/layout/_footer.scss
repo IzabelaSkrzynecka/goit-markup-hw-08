@@ -90,19 +90,19 @@ letter-spacing: 0.03em;
 }}
 .sidebar {
   
+ 
   
-  // margin-left: 70px;
  display: flex;
  flex-direction: column;
  gap: 20px;
  justify-content: center;
-
-
-   @media screen and (max-width:1200px) {
-    margin-right:78px;
-   align-items: center;
-// align-items: flex-start;
-//   justify-content: flex-start;
+margin-bottom: 30px;
+align-items: center;
+   @media screen and (min-width:1200px) {
+    // margin-right:78px;
+  //  align-items: center;
+align-items: flex-start;
+  justify-content: flex-start;
 }
 
 }

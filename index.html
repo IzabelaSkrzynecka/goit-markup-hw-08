@@ -22,23 +22,16 @@
           <a class="logo logo__header" href="index.html">
             <span class="logo__web">Web</span>Studio</a
           >
-          
-          
           <button class="menu-toggle js-open-menu"
            aria-expanded="false"
            aria-controls="mobile-menu"
            type="button">
-            <svg class="js-open-menu__icon"    >
+            <svg class="menu-toggle__icon"    >
                   <use href="./images/icons.svg#burger-menu"></use>
             </svg>
             </button>
 
-       
-
-     <div class="menu-container js-menu-container" id="mobile-menu">
-    <button   class="menu-toggle js-close-menu" class="js-close-menu" type="button"> <svg class="js-open-menu__icon"    >
-                  <use href="./images/icons.svg#close-button"></use>
-            </svg></button>
+    
          
     <nav class="navigation">            
             <ul class="navigation__list">
@@ -871,7 +864,7 @@
         <div class="newsletter">
           <strong class="newsletter__title">Zapisz się do newslettera</strong>
           <form class="newsletter__form">
-            <label for="newsletter_contact">
+            <label for="newsletter_contact" width="100%">
               <input
                 placeholder="E-mail"
                 class="newsletter__input"
@@ -958,7 +951,13 @@
         <button type="button" class="modal__btn-close" data-modal-close>X</button>
       </div>
     </div>
-    <script src="./js/burger-menu.js"></script>
+  
     <script src="./js/modal.js"></script>
+     <!-- <div class="menu-container js-menu-container" id="mobile-menu"> -->
+    <button   class="menu-toggle js-close-menu" class="js-close-menu" type="button"> <svg class="js-open-menu__icon"    >
+                  <use href="./images/icons.svg#close-button"></use>
+            </svg>
+          </button>
+       <script src="./js/burger-menu.js"></script>     
   </body>
 </html>
