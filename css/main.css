@@ -1092,13 +1092,14 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 30px;
   gap: 9px;
 }
 @media screen and (max-width: 1200px) {
   .footer__address {
     margin-top: 20px;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     width: 246px;
     font-size: 14px;
