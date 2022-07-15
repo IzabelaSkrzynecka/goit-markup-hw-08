@@ -15,7 +15,7 @@
     />
     <link href="./css/main.min.css" rel="stylesheet" />
   </head>
-  <body style="overflow: hidden;">
+  <body >
     <header class="header">
       <div class="container container--header">
       
@@ -940,22 +940,22 @@
     <script src="./js/modal.js"></script>
      <div class="menu-container js-menu-container" id="mobile-menu">
       <ul class="mobile-menu">
-        <li><a href="" class="link">Agencja</a></li>
-        <li><a href="" class="link">Portfolio</a></li>
-        <li><a href="" class="link">Kontakt</a></li>
+        <li><a href="" class="mobile-menu__link mobile-menu__link--agency">Agencja</a></li>
+        <li><a href="" class="mobile-menu__link mobile-menu__link--portfolio">Portfolio</a></li>
+        <li><a href="" class="mobile-menu__link--contact">Kontakt</a></li>
       </ul>
       <ul class="mobile-contacts">
 <li>
+              <a class="mobile-contacts__link mobile-contacts__link--phone" href="tel:+48 111 111 111">
+                
+                +48 111 111 111 </a>
+            </li>
+            <li>
               <a class="mobile-contacts__link" href="mailto:info@devstudio.com">
               
                 info@devstudio.com
               </a>
-            </li>
-            <li>
-              <a class="mobile-contacts__link mobile-contacts__link--phone" href="tel:+48 111 111 111">
-                
-                +48 111 111 111
-              </a>
+              
             </li>
       </ul>
        <ul class="social-media">
@@ -974,12 +974,12 @@
                   LinkedIn
               </a></li>
           </ul> 
-    </div>
+    
     <button   class="menu-toggle js-close-menu" class="js-close-menu" type="button"> <svg class="js-open-menu__icon"    >
-                  <use href="./images/icons.svg#close-button"></use>
+                  <use class="js-close-menu-icon" href="./images/icons.svg#close-button"></use>
             </svg>
           </button>
-   
+   </div>
        <script src="./js/burger-menu.js"></script>     
   </body>
 </html>

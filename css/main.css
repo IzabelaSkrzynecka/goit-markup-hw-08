@@ -137,6 +137,38 @@ select {
   fill: black;
 }
 
+.js-close-menu {
+  background-color: transparent;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 425px;
+  top: 10px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .js-close-menu {
+    display: none;
+  }
+}
+
+.js-close-menu-icon {
+  position: absolute;
+  left: 27.5%;
+  right: 25.83%;
+  top: 27.5%;
+  bottom: 25.83%;
+  background: #212121;
+}
+.js-close-menu-icon:hover {
+  background: var(--beside-color);
+}
+@media screen and (min-width: 768px) {
+  .js-close-menu-icon {
+    display: none;
+  }
+}
+
 .menu-container {
   position: fixed;
   top: 0;
@@ -157,16 +189,43 @@ select {
 }
 
 .mobile-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  box-sizing: border-box;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.mobile-menu__link--agency {
+  position: absolute;
+  width: 153px;
+  height: 48px;
+  left: 40px;
+  top: 48px;
+}
+.mobile-menu__link--agency:hover {
+  color: var(--beside-color);
+}
+.mobile-menu__link--portfolio {
+  position: absolute;
+  width: 219px;
+  height: 48px;
+  left: 40px;
+  top: 132px;
+}
+.mobile-menu__link--portfolio:hover {
+  color: var(--beside-color);
+}
+.mobile-menu__link--contact {
+  position: absolute;
+  width: 192px;
+  height: 48px;
+  left: 40px;
+  top: 212px;
+}
+.mobile-menu__link--contact:hover {
+  color: var(--beside-color);
 }
 
 .mobile-contacts {
@@ -177,14 +236,32 @@ select {
   color: var(--brand-color);
   transition: color var(--animation);
 }
-.mobile-contacts:hover {
-  color: var(--beside-color);
-}
 
+.mobile-contacts__link {
+  position: absolute;
+  width: 231px;
+  height: 28px;
+  left: 40px;
+  top: 634px;
+}
 .mobile-contacts__link--phone {
   font-size: 34px;
   line-height: 40px;
   color: #2196F3;
+  position: absolute;
+  width: 267px;
+  height: 40px;
+  left: 40px;
+  top: 562px;
+}
+
+.social-media {
+  position: absolute;
+  width: 357px;
+  height: 22px;
+  left: 40px;
+  top: 726px;
+  color: var(--beside-color);
 }
 
 .customers__title, .members__title, .solutions__title {
@@ -1150,6 +1227,11 @@ select {
 }
 .footer__contact:hover {
   color: var(--beside-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer__contact {
+    text-align: left;
+  }
 }
 
 .sidebar {
