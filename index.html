@@ -15,7 +15,7 @@
     />
     <link href="./css/main.min.css" rel="stylesheet" />
   </head>
-  <body>
+  <body style="overflow: hidden;">
     <header class="header">
       <div class="container container--header">
       
@@ -67,22 +67,7 @@
               </a>
             </li>
           </ul>
-          <ul class="social-media">
-            <li class="social-media__item">
-              <a href="" >
-                  Instagram
-              </a>
-            </li>
-            <li class="social-media__item"> <a href="" >
-                 Twitter 
-              </a></li>
-            <li class="social-media__item"> <a href="" >
-                 Facebook 
-              </a></li>
-            <li class="social-media__item"> <a href="" >
-                  LinkedIn
-              </a></li>
-          </ul>
+         
      </div> 
      
     </header>
@@ -953,11 +938,48 @@
     </div>
   
     <script src="./js/modal.js"></script>
-     <!-- <div class="menu-container js-menu-container" id="mobile-menu"> -->
+     <div class="menu-container js-menu-container" id="mobile-menu">
+      <ul class="mobile-menu">
+        <li><a href="" class="link">Agencja</a></li>
+        <li><a href="" class="link">Portfolio</a></li>
+        <li><a href="" class="link">Kontakt</a></li>
+      </ul>
+      <ul class="mobile-contacts">
+<li>
+              <a class="mobile-contacts__link" href="mailto:info@devstudio.com">
+              
+                info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a class="mobile-contacts__link mobile-contacts__link--phone" href="tel:+48 111 111 111">
+                
+                +48 111 111 111
+              </a>
+            </li>
+      </ul>
+       <ul class="social-media">
+            <li class="social-media__item">
+              <a href="" >
+                  Instagram
+              </a>
+            </li>
+            <li class="social-media__item"> <a href="" >
+                 Twitter 
+              </a></li>
+            <li class="social-media__item"> <a href="" >
+                 Facebook 
+              </a></li>
+            <li class="social-media__item"> <a href="" >
+                  LinkedIn
+              </a></li>
+          </ul> 
+    </div>
     <button   class="menu-toggle js-close-menu" class="js-close-menu" type="button"> <svg class="js-open-menu__icon"    >
                   <use href="./images/icons.svg#close-button"></use>
             </svg>
           </button>
+   
        <script src="./js/burger-menu.js"></script>     
   </body>
 </html>

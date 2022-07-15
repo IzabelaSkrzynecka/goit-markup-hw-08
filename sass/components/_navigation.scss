@@ -1,5 +1,5 @@
 .navigation {
-
+display: none;
          
   @media screen and (min-width:767px) {
 display: flex;
@@ -9,12 +9,13 @@ display: flex;
 }
 
 .navigation__list {
-  display: flex;
-  flex-direction: column;
-gap: 32px;
-  align-items: flex-start;
+ 
    
-   @media screen and ( min-width: 768px) {
+   @media screen and ( min-width: 768px) { 
+    display: flex;
+  flex-direction: column;
+// gap: 32px;
+  align-items: flex-start;
          flex-direction: row;
          align-items: center;
    gap: 46px;}
