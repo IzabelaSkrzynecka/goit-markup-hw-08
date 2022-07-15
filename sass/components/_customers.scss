@@ -31,15 +31,15 @@
   justify-content: center;
   align-items: center;
   transition: color var(--animation), border var(--animation);
- flex: 0 0 calc(100% - 30px);
- max-width: calc(100% - 30px);
+ flex: 0 0 calc(50% - 30px);
+ max-width: calc(50% - 30px);
 &:hover,
 &:focus  {
   color: var(--beside-color);
   border: 1px solid  var(--beside-color);}
   @media screen and (min-width:768px) {
     // width:226px;
-    max-width: calc(50% - 30px)
+    max-width: calc(33.3333% - 30px);
   }
    @media screen and (min-width:1200px) {
   max-width: 170px;

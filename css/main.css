@@ -797,8 +797,8 @@ select {
   justify-content: center;
   align-items: center;
   transition: color var(--animation), border var(--animation);
-  flex: 0 0 calc(100% - 30px);
-  max-width: calc(100% - 30px);
+  flex: 0 0 calc(50% - 30px);
+  max-width: calc(50% - 30px);
 }
 .customers__item:hover, .customers__item:focus {
   color: var(--beside-color);
@@ -806,7 +806,7 @@ select {
 }
 @media screen and (min-width: 768px) {
   .customers__item {
-    max-width: calc(50% - 30px);
+    max-width: calc(33.3333% - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
