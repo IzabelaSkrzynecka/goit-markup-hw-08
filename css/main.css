@@ -124,6 +124,18 @@ select {
     border-radius: 50%;
     outline: none;
   }
+  .menu-toggle__icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: black;
+  }
+}
+.menu-toggle .menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: var(--text-main-color);
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
@@ -152,23 +164,6 @@ select {
   }
 }
 
-.js-close-menu-icon {
-  position: absolute;
-  left: 27.5%;
-  right: 25.83%;
-  top: 27.5%;
-  bottom: 25.83%;
-  background: #212121;
-}
-.js-close-menu-icon:hover {
-  background: var(--beside-color);
-}
-@media screen and (min-width: 768px) {
-  .js-close-menu-icon {
-    display: none;
-  }
-}
-
 .menu-container {
   position: fixed;
   top: 0;
@@ -186,6 +181,10 @@ select {
   .menu-container {
     display: none;
   }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
 }
 
 .mobile-menu {
@@ -1288,7 +1287,6 @@ select {
 }
 
 .newsletter__input {
-  display: block;
   width: 100%;
   padding: 15px 0 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
