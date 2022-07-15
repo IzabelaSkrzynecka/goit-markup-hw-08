@@ -62,21 +62,22 @@ align-items: flex-start;
   align-items: center;
   margin-top: 30px;
   gap: 9px;
-
+@media screen and (min-width:1200px){
+  align-items:flex-start
+}}
   
-  @media screen and (max-width:1200px) {
-    margin-top: 20px;
-align-items: center;
-  justify-content: flex-start;
-  width: 246px;
-  font-size: 14px;
-line-height: 24px;
-/* or 171% */
+//   @media screen and (max-width:1200px) {
+//     margin-top: 20px;
+// align-items: center;
+//   justify-content: flex-start;
+//   width: 246px;
+//   font-size: 14px;
+// line-height: 24px;
+// /* or 171% */
 
-letter-spacing: 0.03em;
+// letter-spacing: 0.03em;
 
-}
-}
+
 
 .footer__contact {
   color: #ffffff;
@@ -88,9 +89,7 @@ letter-spacing: 0.03em;
 &:hover {
   color: var(--beside-color);
 }
- @media screen and (min-width:1200px) {
-  text-align: left;}
-  }
+}
 .sidebar {
   
  
