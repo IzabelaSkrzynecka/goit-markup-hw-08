@@ -845,8 +845,30 @@
             </li>
           </ul>
         </div>    
-        
-        <div class="newsletter">
+         <form class="newsletter" name="signup_form">
+          <label class="newsletter__title">Zapisz się do newslettera</label>
+          <div class="newsletter__bag">
+          <!-- <form class="newsletter__form"> -->
+            <label for="newsletter_contact">
+              <input
+                placeholder="E-mail"
+                class="newsletter__input"
+                id="newsletter"
+                name="email"
+              />
+            <!-- </label> -->
+            <button type="submit" class="newsletter__btn">
+              Zapisz się
+              <svg class="newsletter__icon" width="24px">
+                <use href="./images/icons.svg#form-send"></use>
+              </svg>
+            </button>
+            </div>
+          </form>
+        <!-- </div>   -->
+       </div>
+      </footer> 
+        <!-- <div class="newsletter">
           <strong class="newsletter__title">Zapisz się do newslettera</strong>
           <form class="newsletter__form">
             <label for="newsletter_contact" width="100%">
@@ -866,7 +888,7 @@
           </form>
         </div>  
        </div>
-      </footer> 
+      </footer>  -->
     
    
     <div class="backdrop is-hidden" data-modal>

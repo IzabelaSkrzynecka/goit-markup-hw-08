@@ -1247,11 +1247,13 @@ select {
 }
 
 .newsletter {
-  margin: 0 auto;
+  margin-top: 20px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .newsletter {
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -1288,6 +1290,7 @@ select {
 
 .newsletter__input {
   width: 100%;
+  height: 50px;
   padding: 15px 0 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;

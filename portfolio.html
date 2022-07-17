@@ -35,10 +35,10 @@
 
        
 
-     <div class="menu-container js-menu-container" id="mobile-menu">
+     <!-- <div class="menu-container js-menu-container" id="mobile-menu">
     <button   class="menu-toggle js-close-menu" class="js-close-menu" type="button"> <svg class="js-open-menu__icon"    >
                   <use href="./images/icons.svg#close-button"></use>
-            </svg></button>
+            </svg></button> -->
          
     <nav class="navigation">            
             <ul class="navigation__list">
@@ -74,7 +74,7 @@
               </a>
             </li>
           </ul>
-          <ul class="social-media">
+          <!-- <ul class="social-media">
             <li class="social-media__item">
               <a href="" >
                   Instagram
@@ -89,7 +89,7 @@
             <li class="social-media__item"> <a href="" >
                   LinkedIn
               </a></li>
-          </ul>
+          </ul> -->
      </div> 
      
     </header>
@@ -865,27 +865,71 @@
           </ul>
         </div>    
         
-        <div class="newsletter">
-          <strong class="newsletter__title">Zapisz się do newslettera</strong>
-          <form class="newsletter__form">
+        <form class="newsletter" name="signup_form">
+          <label class="newsletter__title">Zapisz się do newslettera</label>
+          <div class="newsletter__bag">
+          <!-- <form class="newsletter__form"> -->
             <label for="newsletter_contact">
               <input
                 placeholder="E-mail"
                 class="newsletter__input"
-                id="newsletter_contact"
+                id="newsletter"
                 name="email"
               />
-            </label>
+            <!-- </label> -->
             <button type="submit" class="newsletter__btn">
               Zapisz się
               <svg class="newsletter__icon" width="24px">
                 <use href="./images/icons.svg#form-send"></use>
               </svg>
             </button>
+            </div>
           </form>
-        </div>  
+        <!-- </div>   -->
        </div>
       </footer> 
-    <script src="./js/burger-menu.js"></script>
+       <div class="menu-container js-menu-container" is-open id="mobile-menu">
+      <ul class="mobile-menu">
+        <li><a href="" class="mobile-menu__link mobile-menu__link--agency">Agencja</a></li>
+        <li><a href="" class="mobile-menu__link mobile-menu__link--portfolio">Portfolio</a></li>
+        <li><a href="" class="mobile-menu__link--contact">Kontakt</a></li>
+      </ul>
+      <ul class="mobile-contacts">
+<li>
+              <a class="mobile-contacts__link mobile-contacts__link--phone" href="tel:+48 111 111 111">
+                
+                +48 111 111 111 </a>
+            </li>
+            <li>
+              <a class="mobile-contacts__link" href="mailto:info@devstudio.com">
+              
+                info@devstudio.com
+              </a>
+              
+            </li>
+      </ul>
+       <ul class="social-media">
+            <li class="social-media__item">
+              <a href="" >
+                  Instagram
+              </a>
+            </li>
+            <li class="social-media__item"> <a href="" >
+                 Twitter 
+              </a></li>
+            <li class="social-media__item"> <a href="" >
+                 Facebook 
+              </a></li>
+            <li class="social-media__item"> <a href="" >
+                  LinkedIn
+              </a></li>
+          </ul> 
+    
+    <button   class="menu-toggle js-close-menu" class="js-close-menu" type="button"> <svg class="menu-toogle__icon" fill="currentColor" viewbox="0 0 20 20" width="24" height="24"  >
+                  <use class="js-close-menu-icon" href="./images/icons.svg#close-button"></use>
+            </svg>
+          </button>
+   </div>
+       <script src="./js/burger-menu.js"></script>     
   </body>
 </html>
