@@ -154,7 +154,7 @@ select {
   position: absolute;
   width: 40px;
   height: 40px;
-  left: 425px;
+  right: 8px;
   top: 10px;
   cursor: pointer;
 }
@@ -183,8 +183,10 @@ select {
   }
 }
 
-.menu-container.is-open {
-  transform: translateX(0);
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
 }
 
 .mobile-menu {
@@ -246,7 +248,7 @@ select {
 .mobile-contacts__link--phone {
   font-size: 34px;
   line-height: 40px;
-  color: #2196F3;
+  color: #2196f3;
   position: absolute;
   width: 267px;
   height: 40px;
@@ -1156,7 +1158,19 @@ select {
   width: 100%;
 }
 
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .footer__direction {
+  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
   width: 100%;
   margin: 0 auto;
 }
@@ -1179,16 +1193,8 @@ select {
     width: 90%;
   }
 }
-
-.footer__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 60px;
-}
 @media screen and (min-width: 1200px) {
-  .footer__info {
+  .footer__direction {
     align-items: flex-start;
     margin-right: 70px;
     margin-bottom: 0;
@@ -1247,10 +1253,19 @@ select {
 }
 
 .newsletter {
+  margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .newsletter {
+    margin: 0;
+  }
+}
+
+.newsletter__bag {
   margin-top: 20px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .newsletter {
+  .newsletter__bag {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1326,9 +1341,6 @@ select {
   cursor: pointer;
   width: 200px;
   height: 50px;
-  padding-left: 42px;
-  padding-right: 28px;
-  justify-content: space-between;
 }
 
 .newsletter__icon {
