@@ -11,9 +11,12 @@
   line-height: 28px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+justify-content: center;
 
   @media screen and (min-width: 1200px) {
     font-size: 26px;
+    text-align: left;
+    justify-content: left;
   }
 }
 
@@ -35,10 +38,15 @@
 .logo__web--white {
   color: #ffffff;
 }
-.logo__foter {
-  
+.logo__footer {
+ margin-bottom: 20px;
   background-color: #2f303a;
   &:hover {
     color: var(--beside-color);
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    text-align: left;
+  }
+
 }

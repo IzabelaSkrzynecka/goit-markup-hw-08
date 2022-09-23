@@ -1,6 +1,6 @@
 .skills{
     @extend %section;
-padding-bottom: 45px;
+padding-bottom: 65px;
   
 @media screen and (min-width:768px) {
  padding-bottom: 45px;}
@@ -58,7 +58,7 @@ margin: 15px;
   min-height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .skill__icon {
   width: 70px;
@@ -72,6 +72,8 @@ margin: 15px;
   display: flex;
   margin-bottom: 10px;
   text-align: center;
+  text-transform: uppercase;
+
   
 @media screen and (min-width:768px) {
   text-align: left;
@@ -82,5 +84,6 @@ margin: 15px;
   line-height: 1.7;
   color: var(--brand-color);
   display: flex;
+  letter-spacing: 0.03em;
  
 }

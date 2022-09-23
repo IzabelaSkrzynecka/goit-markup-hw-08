@@ -24,7 +24,7 @@
   @media screen and (max-width: 767px) {
     border: none;
     background-color: #fff;
-    position: absolute;
+    // position: absolute;
     left: 90%;
     padding: 0;
     transition-duration: 250ms;
@@ -42,16 +42,16 @@
     border-radius: 50%;
     outline: none;
     &__icon {
-      position: absolute;
+      // position: absolute;
       top: 16px;
       right: 16px;
       color: black;
     }
   }
   .menu-container .menu-toggle {
-    position: absolute;
-    top: 16px;
-    right: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     color: var(--text-main-color);
   }
 
@@ -71,7 +71,12 @@
 .menu-toggle__icon {
   width: 24px;
   height: 16px;
-  fill: black;
+  // fill: black;
+  &-active {
+  &:hover{
+    color:var(--beside-color);
+    cursor:pointer;
+  }}
 }
 
 //     .is-open{
@@ -133,21 +138,21 @@
 //   }
 // }
 .menu-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 40px 48px;
-  background-color: #fff;
-  z-index: 999;
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
-  display: block;
-  @media screen and (min-width: 767px) {
-    display: none;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px 48px 40px;
+    background-color: #fff;
+    z-index: 1002;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
   }
-}
+
 .menu-container.is-open {
   @media screen and (min-width: 320px) and (max-width: 767px) {
     transform: translateX(0);
@@ -163,35 +168,20 @@
 
   color: #212121;
 
-  &__link--agency {
-    position: absolute;
-    width: 153px;
-    height: 48px;
-    left: 40px;
-    top: 48px;
+  &__link{
+    font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+letter-spacing: 0.02em;
+margin-bottom: 32px;
+  
+
     &:hover {
       color: var(--beside-color);
-    }
+   
   }
-  &__link--portfolio {
-    position: absolute;
-    width: 219px;
-    height: 48px;
-    left: 40px;
-    top: 132px;
-    &:hover {
-      color: var(--beside-color);
-    }
-  }
-  &__link--contact {
-    position: absolute;
-    width: 192px;
-    height: 48px;
-    left: 40px;
-    top: 212px;
-    &:hover {
-      color: var(--beside-color);
-    }
+  .mobile-menu__link--active-page{
+    color:  var(--beside-color);
   }
   // padding: 0;
   // margin: 0;
@@ -204,38 +194,66 @@
   // margin-inline-end: 0px;
   // padding-inline-start: 40px;
 }
+.mobile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .mobile-contacts {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
+  
+@media screen and (min-width: 320px) and (max-width: 767px){
+  max-height: 443px;
+    text-align: left;
+  
 
   color: var(--brand-color);
   transition: color var(--animation);
 }
+}
+.mobile-contacts__tel{
+  
+@media screen and (min-width: 320px) and (max-width: 767px){
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  padding-bottom: 32px;}}
 
-.mobile-contacts__link {
-  position: absolute;
-  width: 231px;
+.mobile-contacts__link-tel{
+  
+@media screen and (min-width: 320px) and (max-width: 767px){
+  color: #2196f3;}
+}
+
+.mobile-contacts__mail {
+
   height: 28px;
-  left: 40px;
-  top: 634px;
-  &--phone {
-    font-size: 34px;
-    line-height: 40px;
-    color: #2196f3;
-    position: absolute;
-    width: 267px;
-    height: 40px;
-    left: 40px;
-    top: 562px;
-  }
+  font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 0.02em;
+padding-bottom: 60px;
+
+}
+.mobile-contacts__link-mail{
+  color: #757575;
 }
 .social-media {
-  position: absolute;
-  width: 357px;
-  height: 22px;
-  left: 40px;
-  top: 726px;
+     
+  // max-width: 357px;
+  // width: 100%;
+  // height: 22px;
+ 
   color: var(--beside-color);
+}
+&__item{
+  padding-right: 6px;
+}
+}
+.social-media__link{
+  font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: .02em;
+    color: #2196f3;
 }

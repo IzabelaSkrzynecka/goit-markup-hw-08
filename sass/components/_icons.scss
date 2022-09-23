@@ -17,6 +17,9 @@
   justify-content: center;
   margin-right: 10px;
   transition: color var(--animation);
+  &:last-child{
+    margin-right: 0;
+  }
 &:hover,
 &:focus {
   background-color: #2196f3;
@@ -29,4 +32,5 @@
   height: 20px;
   fill: currentColor;
   display: flex;
+  color: #ffffff;
 }

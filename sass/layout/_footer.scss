@@ -6,14 +6,14 @@
   padding-bottom: 60px;
   width:100%;
 }
-.container {
-      min-width: 320px;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-}
+// .container {
+//       // min-width: 320px;
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     width: 100%;
+//     padding-right: 15px;
+//     padding-left: 15px;
+// }
 .footer__direction {
 
   justify-content: center;
@@ -27,6 +27,7 @@
   // flex-wrap: wrap;
   align-items: flex-start;
    display: flex;
+   flex-direction: row;
 flex-wrap: wrap;
   align-items: center;
   //  flex-wrap: wrap;
@@ -38,10 +39,10 @@ flex-wrap: wrap;
 @media screen and (min-width:1200px) {
   
   display: flex;
-  padding-left: 15px;
-    padding-right: 15px;
-  flex-wrap: nowrap;
-  width: 90%;
+  // padding-left: 15px;
+  //   padding-right: 15px;
+  // flex-wrap: nowrap;
+  // width: 90%;
 
 
 }
@@ -61,20 +62,18 @@ flex-wrap: wrap;
 //   }
   @media screen and (min-width:1200px) {
 align-items: flex-start;
-  // justify-content: flex-start;
-   margin-right: 70px;
-    margin-bottom: 0;
+ display: flex;
   }}
-
 .footer__address {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
-  gap: 9px;
+  margin-bottom: 8px;
+  // gap: 9px;
 @media screen and (min-width:1200px){
-  align-items:flex-start
+  text-align: left;
+ 
 }}
   
 //   @media screen and (max-width:1200px) {
@@ -94,12 +93,25 @@ align-items: flex-start;
   color: #ffffff;
   opacity: 0.6;
   background-color: #2f303a;
-  line-height: 1.7;
-  font-size: 14;
   transition: color var(--animation);
+  text-align: center;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: .03em;
+    padding-bottom: 9px;
 &:hover {
   color: var(--beside-color);
 }
+@media screen and (min-width:1200px) {
+  text-align: left;
+}
+  
+}
+
+.footer__contact-item{
+  text-align: left;
 }
 .sidebar {
   
@@ -127,6 +139,12 @@ align-items: flex-start;
   text-align: center;
 }
 
-
-
+.footer__information{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: .03em;
+  list-style: none;
+  text-decoration: none;
+}
 

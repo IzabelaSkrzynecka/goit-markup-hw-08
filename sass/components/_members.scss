@@ -3,8 +3,13 @@
   background-color: #f5f4fa;
   
 &__title {
-@extend %title;
-margin-bottom: 50px;
+// @extend %title;
+font-weight: 700;
+font-size: 28px;
+line-height: 33px;
+margin-bottom: 30px;
+text-align: center;
+color: #212121;
 }
 &__list{
   // margin: 0 auto;
@@ -63,7 +68,8 @@ margin-bottom: 50px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
+  margin-bottom: 16px;
+  
 }
 
 
